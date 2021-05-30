@@ -1,55 +1,55 @@
-import { Recipe, IngredientName, Unit } from '../types';
+import { Recipe, Food, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'crunchy curried chickpea bowls',
     ingredients: [
         {
-            name: IngredientName.CHICKPEAS,
+            name: Food.CHICKPEAS,
             quantity: 13.4,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.CARROT,
+            name: Food.CARROT,
             quantity: 3,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.LEMON,
+            name: Food.LEMON,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.KALE,
+            name: Food.KALE,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.GOLDEN_RAISINS,
+            name: Food.GOLDEN_RAISINS,
             quantity: 1,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.CURRY_POWDER,
+            name: Food.CURRY_POWDER,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.BASMATI_RICE,
+            name: Food.BASMATI_RICE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         {
-            name: IngredientName.VEGETABLE_STOCK_CONCENTRATE,
+            name: Food.VEGETABLE_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.SHREDDED_RED_CABBAGE,
+            name: Food.SHREDDED_RED_CABBAGE,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.SOUR_CREAM,
+            name: Food.SOUR_CREAM,
             quantity: 6,
             unit: Unit.TBSP,
         },

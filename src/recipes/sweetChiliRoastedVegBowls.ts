@@ -1,60 +1,60 @@
-import { IngredientName, Recipe, Unit } from '../types';
+import { Food, Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'sweet chili roasted veg bowls',
     ingredients: [
         {
-            name: IngredientName.SWEET_POTATO,
+            name: Food.SWEET_POTATO,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.BUTTON_MUSHROOMS,
+            name: Food.BUTTON_MUSHROOMS,
             quantity: 8,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.GARLIC_POWDER,
+            name: Food.GARLIC_POWDER,
             quantity: 1,
             unit: Unit.TSP,
         },
         {
-            name: IngredientName.JASMINE_RICE,
+            name: Food.JASMINE_RICE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         {
-            name: IngredientName.MAYONNAISE,
+            name: Food.MAYONNAISE,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.CILANTRO,
+            name: Food.CILANTRO,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.SWEET_SOY_GLAZE,
+            name: Food.SWEET_SOY_GLAZE,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.SWEET_THAI_CHILI_SAUCE,
+            name: Food.SWEET_THAI_CHILI_SAUCE,
             quantity: 1,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.RICE_WINE_VINEGAR,
+            name: Food.RICE_WINE_VINEGAR,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.COLESLAW_MIX,
+            name: Food.COLESLAW_MIX,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.CRISPY_FRIED_ONIONS,
+            name: Food.CRISPY_FRIED_ONIONS,
             quantity: 1,
             unit: Unit.INTEGER,
         },

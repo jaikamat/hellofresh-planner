@@ -1,4 +1,4 @@
-export enum IngredientName {
+export enum Food {
     GARLIC_CLOVE = 'GARLIC_CLOVE',
     CARROT = 'CARROT',
     RED_ONION = 'RED_ONION',
@@ -79,7 +79,7 @@ export interface Recipe {
 }
 
 export interface Ingredient {
-    name: IngredientName;
+    name: Food;
     quantity: number;
     unit: Unit;
 }

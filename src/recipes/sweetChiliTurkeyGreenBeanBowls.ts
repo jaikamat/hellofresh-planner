@@ -1,46 +1,46 @@
-import { IngredientName, Recipe, Unit } from '../types';
+import { Food, Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'sweet chili turkey & green bean bowls',
     ingredients: [
         {
-            name: IngredientName.JASMINE_RICE,
+            name: Food.JASMINE_RICE,
             quantity: 0.75,
             unit: Unit.CUP,
         },
         {
-            name: IngredientName.GREEN_BEANS,
+            name: Food.GREEN_BEANS,
             quantity: 6,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.LIME,
+            name: Food.LIME,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.CILANTRO,
+            name: Food.CILANTRO,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.GROUND_TURKEY,
+            name: Food.GROUND_TURKEY,
             quantity: 10,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.SWEET_SOY_GLAZE,
+            name: Food.SWEET_SOY_GLAZE,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.SWEET_THAI_CHILI_SAUCE,
+            name: Food.SWEET_THAI_CHILI_SAUCE,
             quantity: 1,
             unit: Unit.OZ,
         },
         // Find measurement for this from HF
         {
-            name: IngredientName.CRISPY_FRIED_ONIONS,
+            name: Food.CRISPY_FRIED_ONIONS,
             quantity: 1,
             unit: Unit.INTEGER,
         },

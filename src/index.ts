@@ -1,4 +1,4 @@
-import { IngredientName, Unit, Recipe, Ingredient } from './types';
+import { Food, Unit, Recipe, Ingredient } from './types';
 import * as recipes from './recipes';
 
 /**

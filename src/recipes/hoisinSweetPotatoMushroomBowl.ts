@@ -1,55 +1,55 @@
-import { Recipe, IngredientName, Unit } from '../types';
+import { Recipe, Food, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'hoisin sweet potato & mushroom bowl',
     ingredients: [
         {
-            name: IngredientName.SCALLION,
+            name: Food.SCALLION,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.FRESH_GINGER,
+            name: Food.FRESH_GINGER,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.SWEET_POTATO,
+            name: Food.SWEET_POTATO,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.CRIMINI_MUSHROOM,
+            name: Food.CRIMINI_MUSHROOM,
             quantity: 8,
             unit: Unit.OZ,
         },
         {
-            name: IngredientName.BELL_PEPPER,
+            name: Food.BELL_PEPPER,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: IngredientName.JASMINE_RICE,
+            name: Food.JASMINE_RICE,
             quantity: 0.75,
             unit: Unit.CUP,
         },
         {
-            name: IngredientName.HOISIN_SAUCE,
+            name: Food.HOISIN_SAUCE,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.MAYONNAISE,
+            name: Food.MAYONNAISE,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.SOUR_CREAM,
+            name: Food.SOUR_CREAM,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: IngredientName.SRIRACHA,
+            name: Food.SRIRACHA,
             quantity: 1,
             unit: Unit.TSP,
         },
