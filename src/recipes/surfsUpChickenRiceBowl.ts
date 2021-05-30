@@ -1,55 +1,67 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    SCALLION,
+    JASMINE_RICE,
+    ROMA_TOMATOES,
+    KIWI,
+    LIME,
+    SOUR_CREAM,
+    CHIPOTLE_POWDER,
+    CHICKEN_BREAST,
+    SOUTHWEST_SPICE_BLEND,
+    CHICKEN_STOCK_CONCENTRATE,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'surfs up chicken & rice bowl',
     ingredients: [
         {
-            name: Food.SCALLION,
+            food: SCALLION,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.JASMINE_RICE,
+            food: JASMINE_RICE,
             quantity: 0.75,
             unit: Unit.CUP,
         },
         {
-            name: Food.ROMA_TOMATOES,
+            food: ROMA_TOMATOES,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.KIWI,
+            food: KIWI,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.LIME,
+            food: LIME,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.SOUR_CREAM,
+            food: SOUR_CREAM,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: Food.CHIPOTLE_POWDER,
+            food: CHIPOTLE_POWDER,
             quantity: 1,
             unit: Unit.TSP,
         },
         {
-            name: Food.CHICKEN_BREAST,
+            food: CHICKEN_BREAST,
             quantity: 10,
             unit: Unit.OZ,
         },
         {
-            name: Food.SOUTHWEST_SPICE_BLEND,
+            food: SOUTHWEST_SPICE_BLEND,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.CHICKEN_STOCK_CONCENTRATE,
+            food: CHICKEN_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },

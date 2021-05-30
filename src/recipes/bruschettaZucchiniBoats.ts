@@ -1,55 +1,67 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    ZUCCHINI,
+    ITALIAN_SEASONING,
+    GARLIC_CLOVE,
+    ROMA_TOMATOES,
+    ISRAELI_COUSCOUS,
+    VEGETABLE_STOCK_CONCENTRATE,
+    PARMESAN_CHEESE,
+    BALSAMIC_GLAZE,
+    CHILI_FLAKES,
+    MOZZARELLA_CHEESE,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'bruschetta zucchini boats',
     ingredients: [
         {
-            name: Food.ZUCCHINI,
+            food: ZUCCHINI,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.ITALIAN_SEASONING,
+            food: ITALIAN_SEASONING,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.GARLIC_CLOVE,
+            food: GARLIC_CLOVE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.ROMA_TOMATOES,
+            food: ROMA_TOMATOES,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.ISRAELI_COUSCOUS,
+            food: ISRAELI_COUSCOUS,
             quantity: 5,
             unit: Unit.OZ,
         },
         {
-            name: Food.VEGETABLE_STOCK_CONCENTRATE,
+            food: VEGETABLE_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.PARMESAN_CHEESE,
+            food: PARMESAN_CHEESE,
             quantity: 0.25,
             unit: Unit.CUP,
         },
         {
-            name: Food.BALSAMIC_GLAZE,
+            food: BALSAMIC_GLAZE,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.CHILI_FLAKES,
+            food: CHILI_FLAKES,
             quantity: 1,
             unit: Unit.TSP,
         },
         {
-            name: Food.MOZZARELLA_CHEESE,
+            food: MOZZARELLA_CHEESE,
             quantity: 0.5,
             unit: Unit.CUP,
         },

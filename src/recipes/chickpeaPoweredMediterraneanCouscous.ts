@@ -1,60 +1,73 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    ZUCCHINI,
+    GRAPE_TOMATOES,
+    THYME,
+    GARLIC_CLOVE,
+    SCALLION,
+    LEMON,
+    CHICKPEAS,
+    SMOKED_PAPRIKA,
+    ISRAELI_COUSCOUS,
+    VEGETABLE_STOCK_CONCENTRATE,
+    FETA_CHEESE,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'chickpea-powered mediterranean couscous',
     ingredients: [
         {
-            name: Food.ZUCCHINI,
+            food: ZUCCHINI,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.GRAPE_TOMATOES,
+            food: GRAPE_TOMATOES,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: Food.THYME,
+            food: THYME,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: Food.GARLIC_CLOVE,
+            food: GARLIC_CLOVE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.SCALLION,
+            food: SCALLION,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.LEMON,
+            food: LEMON,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CHICKPEAS,
+            food: CHICKPEAS,
             quantity: 13.4,
             unit: Unit.OZ,
         },
         {
-            name: Food.SMOKED_PAPRIKA,
+            food: SMOKED_PAPRIKA,
             quantity: 1,
             unit: Unit.TSP,
         },
         {
-            name: Food.ISRAELI_COUSCOUS,
+            food: ISRAELI_COUSCOUS,
             quantity: 0.75,
             unit: Unit.CUP,
         },
         {
-            name: Food.VEGETABLE_STOCK_CONCENTRATE,
+            food: VEGETABLE_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.FETA_CHEESE,
+            food: FETA_CHEESE,
             quantity: 0.5,
             unit: Unit.CUP,
         },

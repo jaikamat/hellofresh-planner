@@ -1,65 +1,79 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    SHALLOT,
+    ROMA_TOMATOES,
+    PERSIAN_CUCUMBER,
+    LEMON,
+    DILL,
+    ISRAELI_COUSCOUS,
+    CHICKEN_STOCK_CONCENTRATE,
+    CHICKEN_CUTLET,
+    ZAATAR_SPICE_BLEND,
+    FETA_CHEESE,
+    SOUR_CREAM,
+    HUMMUS,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'chicken gyro couscous bowls',
     ingredients: [
         {
-            name: Food.SHALLOT,
+            food: SHALLOT,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.ROMA_TOMATOES,
+            food: ROMA_TOMATOES,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.PERSIAN_CUCUMBER,
+            food: PERSIAN_CUCUMBER,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.LEMON,
+            food: LEMON,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.DILL,
+            food: DILL,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: Food.ISRAELI_COUSCOUS,
+            food: ISRAELI_COUSCOUS,
             quantity: 2.5,
             unit: Unit.OZ,
         },
         {
-            name: Food.CHICKEN_STOCK_CONCENTRATE,
+            food: CHICKEN_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CHICKEN_CUTLET,
+            food: CHICKEN_CUTLET,
             quantity: 10,
             unit: Unit.OZ,
         },
         {
-            name: Food.ZAATAR_SPICE_BLEND,
+            food: ZAATAR_SPICE_BLEND,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.FETA_CHEESE,
+            food: FETA_CHEESE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         {
-            name: Food.SOUR_CREAM,
+            food: SOUR_CREAM,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: Food.HUMMUS,
+            food: HUMMUS,
             quantity: 4,
             unit: Unit.TBSP,
         },

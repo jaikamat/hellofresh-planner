@@ -1,70 +1,85 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    BASMATI_RICE,
+    CHICKPEAS,
+    CILANTRO,
+    DRIED_APRICOTS,
+    GARLIC_CLOVE,
+    JALAPENO,
+    LEMON,
+    SLICED_ALMONDS,
+    SOUR_CREAM,
+    TUNISIAN_SPICE_BLEND,
+    VEGETABLE_STOCK_CONCENTRATE,
+    YELLOW_ONION,
+    ZUCCHINI,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'apricot, almond, & chickpea tagine',
     ingredients: [
         {
-            name: Food.YELLOW_ONION,
+            food: YELLOW_ONION,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CILANTRO,
+            food: CILANTRO,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: Food.GARLIC_CLOVE,
+            food: GARLIC_CLOVE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.LEMON,
+            food: LEMON,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.JALAPENO,
+            food: JALAPENO,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.ZUCCHINI,
+            food: ZUCCHINI,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CHICKPEAS,
+            food: CHICKPEAS,
             quantity: 13.4,
             unit: Unit.OZ,
         },
         {
-            name: Food.BASMATI_RICE,
+            food: BASMATI_RICE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         {
-            name: Food.VEGETABLE_STOCK_CONCENTRATE,
+            food: VEGETABLE_STOCK_CONCENTRATE,
             quantity: 2,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.SOUR_CREAM,
+            food: SOUR_CREAM,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: Food.TUNISIAN_SPICE_BLEND,
+            food: TUNISIAN_SPICE_BLEND,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.SLICED_ALMONDS,
+            food: SLICED_ALMONDS,
             quantity: 0.5,
             unit: Unit.OZ,
         },
         {
-            name: Food.DRIED_APRICOTS,
+            food: DRIED_APRICOTS,
             quantity: 1,
             unit: Unit.OZ,
         },

@@ -1,60 +1,73 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    SWEET_POTATO,
+    BUTTON_MUSHROOMS,
+    GARLIC_POWDER,
+    JASMINE_RICE,
+    MAYONNAISE,
+    CILANTRO,
+    SWEET_SOY_GLAZE,
+    SWEET_THAI_CHILI_SAUCE,
+    RICE_WINE_VINEGAR,
+    COLESLAW_MIX,
+    CRISPY_FRIED_ONIONS,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'sweet chili roasted veg bowls',
     ingredients: [
         {
-            name: Food.SWEET_POTATO,
+            food: SWEET_POTATO,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.BUTTON_MUSHROOMS,
+            food: BUTTON_MUSHROOMS,
             quantity: 8,
             unit: Unit.OZ,
         },
         {
-            name: Food.GARLIC_POWDER,
+            food: GARLIC_POWDER,
             quantity: 1,
             unit: Unit.TSP,
         },
         {
-            name: Food.JASMINE_RICE,
+            food: JASMINE_RICE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         {
-            name: Food.MAYONNAISE,
+            food: MAYONNAISE,
             quantity: 2,
             unit: Unit.TBSP,
         },
         {
-            name: Food.CILANTRO,
+            food: CILANTRO,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: Food.SWEET_SOY_GLAZE,
+            food: SWEET_SOY_GLAZE,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: Food.SWEET_THAI_CHILI_SAUCE,
+            food: SWEET_THAI_CHILI_SAUCE,
             quantity: 1,
             unit: Unit.OZ,
         },
         {
-            name: Food.RICE_WINE_VINEGAR,
+            food: RICE_WINE_VINEGAR,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.COLESLAW_MIX,
+            food: COLESLAW_MIX,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: Food.CRISPY_FRIED_ONIONS,
+            food: CRISPY_FRIED_ONIONS,
             quantity: 1,
             unit: Unit.INTEGER,
         },

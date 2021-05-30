@@ -1,76 +1,92 @@
-import { Food, Recipe, Unit } from '../types';
+import {
+    GARLIC_CLOVE,
+    CARROT,
+    RED_ONION,
+    BASMATI_RICE,
+    VEGETABLE_STOCK_CONCENTRATE,
+    CHICKPEAS,
+    CURRY_POWDER,
+    GRAPE_TOMATOES,
+    PERSIAN_CUCUMBER,
+    CILANTRO,
+    LEMON,
+    CHILI_PEPPER_FRESH,
+    YOGURT,
+    SOUR_CREAM,
+} from '../food';
+import { Recipe, Unit } from '../types';
 
 const recipe: Recipe = {
     name: 'curry-spiced chickpea bowls',
     ingredients: [
         {
-            name: Food.GARLIC_CLOVE,
+            food: GARLIC_CLOVE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CARROT,
+            food: CARROT,
             quantity: 6,
             unit: Unit.OZ,
         },
         {
-            name: Food.RED_ONION,
+            food: RED_ONION,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.BASMATI_RICE,
+            food: BASMATI_RICE,
             quantity: 0.5,
             unit: Unit.CUP,
         },
         // Find measurement for this from HF
         {
-            name: Food.VEGETABLE_STOCK_CONCENTRATE,
+            food: VEGETABLE_STOCK_CONCENTRATE,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CHICKPEAS,
+            food: CHICKPEAS,
             quantity: 13.4,
             unit: Unit.OZ,
         },
         {
-            name: Food.CURRY_POWDER,
+            food: CURRY_POWDER,
             quantity: 1,
             unit: Unit.TBSP,
         },
         {
-            name: Food.GRAPE_TOMATOES,
+            food: GRAPE_TOMATOES,
             quantity: 4,
             unit: Unit.OZ,
         },
         {
-            name: Food.PERSIAN_CUCUMBER,
+            food: PERSIAN_CUCUMBER,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CILANTRO,
+            food: CILANTRO,
             quantity: 0.25,
             unit: Unit.OZ,
         },
         {
-            name: Food.LEMON,
+            food: LEMON,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.CHILI_PEPPER_FRESH,
+            food: CHILI_PEPPER_FRESH,
             quantity: 1,
             unit: Unit.INTEGER,
         },
         {
-            name: Food.YOGURT,
+            food: YOGURT,
             quantity: 4,
             unit: Unit.TBSP,
         },
         {
-            name: Food.SOUR_CREAM,
+            food: SOUR_CREAM,
             quantity: 2,
             unit: Unit.TBSP,
         },

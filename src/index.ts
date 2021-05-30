@@ -1,4 +1,4 @@
-import { Food, Unit, Recipe, Ingredient } from './types';
+import { FoodName, Unit, Recipe, Ingredient } from './types';
 import * as recipes from './recipes';
 
 /**
@@ -16,7 +16,9 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
     const output: Ingredient[] = [];
 
     totalIngredients.forEach((i) => {
-        const ingredientLocation = output.findIndex((o) => o.name === i.name);
+        const ingredientLocation = output.findIndex(
+            (o) => o.food.name === i.food.name
+        );
 
         if (ingredientLocation > -1) {
             if (output[ingredientLocation].unit !== i.unit) {
@@ -28,7 +30,7 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
         }
     });
 
-    return output.sort((a, b) => a.name.localeCompare(b.name));
+    return output.sort((a, b) => a.food.name.localeCompare(b.food.name));
 }
 
 // This should be dynamic based on user

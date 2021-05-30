@@ -1,4 +1,13 @@
-export enum Food {
+export enum FoodCategory {
+    SEASONING = 'SEASONING',
+    DAIRY = 'DAIRY',
+    PROTEIN = 'PROTEIN',
+    PRODUCE = 'PRODUCE',
+    GRAIN = 'GRAIN',
+    MISC = 'MISC',
+}
+
+export enum FoodName {
     GARLIC_CLOVE = 'GARLIC_CLOVE',
     CARROT = 'CARROT',
     RED_ONION = 'RED_ONION',
@@ -78,8 +87,13 @@ export interface Recipe {
     ingredients: Ingredient[];
 }
 
+interface Food {
+    name: FoodName;
+    category: FoodCategory;
+}
+
 export interface Ingredient {
-    name: Food;
+    food: Food;
     quantity: number;
     unit: Unit;
 }
