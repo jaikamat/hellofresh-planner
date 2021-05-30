@@ -1,4 +1,4 @@
-import { FoodName, Unit, Recipe, Ingredient } from './types';
+import { Unit, Recipe, Ingredient, FoodCategory } from './types';
 import * as recipes from './recipes';
 
 /**
@@ -34,11 +34,26 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
 }
 
 // This should be dynamic based on user
-console.log(
-    createShoppingList([
+(function init() {
+    const list = createShoppingList([
         recipes.currySpicedChickpeaBowls,
         recipes.sweetChiliTurkeyGreenBeanBowls,
         recipes.apricotAlmondChickpeaTagine,
         recipes.apricotAlmondChickpeaTagine,
-    ])
-);
+    ]);
+
+    Object.keys(FoodCategory).forEach((k) => {
+        console.log(`${k}:`);
+        console.log(
+            list
+                .filter((f) => f.food.category === k)
+                .forEach((f) =>
+                    console.log(
+                        `${f.quantity} ${
+                            f.unit === Unit.INTEGER ? '' : f.unit
+                        } ${f.food.name}`
+                    )
+                )
+        );
+    });
+})();
