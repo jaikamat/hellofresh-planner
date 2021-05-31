@@ -199,8 +199,8 @@ export const FRESH_GINGER = {
     name: FoodName.FRESH_GINGER,
     category: FoodCategory.PRODUCE,
 };
-export const CRIMINI_MUSHROOM = {
-    name: FoodName.CRIMINI_MUSHROOM,
+export const CREMINI_MUSHROOM = {
+    name: FoodName.CREMINI_MUSHROOM,
     category: FoodCategory.PRODUCE,
 };
 export const BELL_PEPPER = {
@@ -230,5 +230,49 @@ export const CHICKEN_BREAST = {
 };
 export const SOUTHWEST_SPICE_BLEND = {
     name: FoodName.SOUTHWEST_SPICE_BLEND,
+    category: FoodCategory.SEASONING,
+};
+export const ASPARAGUS = {
+    name: FoodName.ASPARAGUS,
+    category: FoodCategory.PRODUCE,
+};
+export const SHAWARMA_SPICE_BLEND = {
+    name: FoodName.SHAWARMA_SPICE_BLEND,
+    category: FoodCategory.SEASONING,
+};
+export const SUN_DRIED_TOMATOES = {
+    name: FoodName.SUN_DRIED_TOMATOES,
+    category: FoodCategory.PRODUCE,
+};
+export const SPAGHETTI = {
+    name: FoodName.SPAGHETTI,
+    category: FoodCategory.GRAIN,
+};
+export const CHIVES = {
+    name: FoodName.CHIVES,
+    category: FoodCategory.PRODUCE,
+};
+export const ITALIAN_PARSLEY = {
+    name: FoodName.ITALIAN_PARSLEY,
+    category: FoodCategory.PRODUCE,
+};
+export const PENNE = {
+    name: FoodName.PENNE,
+    category: FoodCategory.GRAIN,
+};
+export const COCONUT_MILK = {
+    name: FoodName.COCONUT_MILK,
+    category: FoodCategory.DAIRY,
+};
+export const PANKO_BREADCRUMBS = {
+    name: FoodName.PANKO_BREADCRUMBS,
+    category: FoodCategory.GRAIN,
+};
+export const GNOCCHI = {
+    name: FoodName.GNOCCHI,
+    category: FoodCategory.GRAIN,
+};
+export const TRUFFLE_ZEST = {
+    name: FoodName.TRUFFLE_ZEST,
     category: FoodCategory.SEASONING,
 };

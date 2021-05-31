@@ -1,6 +1,6 @@
 import { Unit, Recipe, Ingredient, FoodCategory } from './types';
 import * as recipes from './recipes';
-import { terminal } from 'terminal-kit';
+import { stringWidth, terminal } from 'terminal-kit';
 
 /**
  * For each element in the recipe list
@@ -34,6 +34,18 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
     return output.sort((a, b) => a.food.name.localeCompare(b.food.name));
 }
 
+/**
+ * Finds and replaces hyphens and replaces with strings, and correctly cases word
+ */
+function prettyFoodName(name: string) {
+    const transformed = name
+        .split('_')
+        .map((s) => s.toLowerCase())
+        .join(' ');
+
+    return `${transformed.charAt(0).toUpperCase()}${transformed.slice(1)}`;
+}
+
 function formatOutput(ingredients: Ingredient[]): void {
     terminal.clear();
     Object.keys(FoodCategory).forEach((category) => {
@@ -46,7 +58,7 @@ function formatOutput(ingredients: Ingredient[]): void {
             categoryItems.forEach((f) => {
                 const unit = f.unit === Unit.INTEGER ? '' : ` ${f.unit}`;
                 terminal.defaultColor(`${f.quantity}${unit} `);
-                terminal.italic(`${f.food.name}`);
+                terminal.defaultColor(`${prettyFoodName(f.food.name)}`);
                 terminal.nextLine(1);
             });
             terminal.nextLine(1);

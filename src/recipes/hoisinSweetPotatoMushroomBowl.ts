@@ -2,7 +2,7 @@ import {
     SCALLION,
     FRESH_GINGER,
     SWEET_POTATO,
-    CRIMINI_MUSHROOM,
+    CREMINI_MUSHROOM,
     BELL_PEPPER,
     JASMINE_RICE,
     HOISIN_SAUCE,
@@ -31,7 +31,7 @@ const recipe: Recipe = {
             unit: Unit.INTEGER,
         },
         {
-            food: CRIMINI_MUSHROOM,
+            food: CREMINI_MUSHROOM,
             quantity: 8,
             unit: Unit.OZ,
         },
