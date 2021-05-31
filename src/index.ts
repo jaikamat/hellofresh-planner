@@ -22,7 +22,7 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
 
         if (ingredientLocation > -1) {
             if (output[ingredientLocation].unit !== i.unit) {
-                throw new Error('improper unit detected in ingredient!');
+                throw new Error('unit mismatch detected in ingredient!');
             }
             output[ingredientLocation].quantity += i.quantity;
         } else {
@@ -31,6 +31,22 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
     });
 
     return output.sort((a, b) => a.food.name.localeCompare(b.food.name));
+}
+
+function formatOutput(ingredients: Ingredient[]): void {
+    Object.keys(FoodCategory).forEach((category) => {
+        const categoryItems = ingredients.filter(
+            (f) => f.food.category === category
+        );
+        if (categoryItems.length > 0) {
+            console.log(`---${category}---`);
+            categoryItems.forEach((f) => {
+                const unit = f.unit === Unit.INTEGER ? '' : ` ${f.unit}`;
+                console.log(`${f.quantity}${unit} ${f.food.name}`);
+            });
+            console.log('\n');
+        }
+    });
 }
 
 // This should be dynamic based on user
@@ -42,18 +58,5 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
         recipes.apricotAlmondChickpeaTagine,
     ]);
 
-    Object.keys(FoodCategory).forEach((k) => {
-        console.log(`${k}:`);
-        console.log(
-            list
-                .filter((f) => f.food.category === k)
-                .forEach((f) =>
-                    console.log(
-                        `${f.quantity} ${
-                            f.unit === Unit.INTEGER ? '' : f.unit
-                        } ${f.food.name}`
-                    )
-                )
-        );
-    });
+    formatOutput(list);
 })();
