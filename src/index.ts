@@ -1,5 +1,6 @@
 import { Unit, Recipe, Ingredient, FoodCategory } from './types';
 import * as recipes from './recipes';
+import { terminal } from 'terminal-kit/lib/termkit-no-lazy-require.js';
 
 /**
  * For each element in the recipe list
@@ -39,7 +40,7 @@ function formatOutput(ingredients: Ingredient[]): void {
             (f) => f.food.category === category
         );
         if (categoryItems.length > 0) {
-            console.log(`---${category}---`);
+            terminal.green(`---${category}---`);
             categoryItems.forEach((f) => {
                 const unit = f.unit === Unit.INTEGER ? '' : ` ${f.unit}`;
                 console.log(`${f.quantity}${unit} ${f.food.name}`);
