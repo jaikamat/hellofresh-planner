@@ -8,3 +8,9 @@ export { default as crunchyCurriedChickpeaBowls } from './crunchyCurriedChickpea
 export { default as hoisinSweetPotatoMushroomBowl } from './hoisinSweetPotatoMushroomBowl';
 export { default as surfsUpChickenRiceBowl } from './surfsUpChickenRiceBowl';
 export { default as sweetChiliRoastedVegBowls } from './sweetChiliRoastedVegBowls';
+export { default as mediterraneanBakedVeggies } from './mediterraneanBakedVeggies';
+export { default as shawarmaSpicedChicken } from './shawarmaSpicedChicken';
+export { default as sunDriedTomatoSpaghetti } from './sunDriedTomatoSpaghetti';
+export { default as silkySicilianPenne } from './silkySicilianPenne';
+export { default as thaiCoconutCurryChicken } from './thaiCoconutCurryChicken';
+export { default as tripleMushroomTruffleGnocchi } from './tripleMushroomTruffleGnocchi';
