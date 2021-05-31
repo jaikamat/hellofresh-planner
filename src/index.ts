@@ -1,6 +1,6 @@
 import { Unit, Recipe, Ingredient, FoodCategory } from './types';
 import * as recipes from './recipes';
-import { terminal } from 'terminal-kit/lib/termkit-no-lazy-require.js';
+import { terminal } from 'terminal-kit';
 
 /**
  * For each element in the recipe list
@@ -35,19 +35,24 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
 }
 
 function formatOutput(ingredients: Ingredient[]): void {
+    terminal.clear();
     Object.keys(FoodCategory).forEach((category) => {
         const categoryItems = ingredients.filter(
             (f) => f.food.category === category
         );
         if (categoryItems.length > 0) {
-            terminal.green(`---${category}---`);
+            terminal.bold(`---${category}---`);
+            terminal.nextLine(1);
             categoryItems.forEach((f) => {
                 const unit = f.unit === Unit.INTEGER ? '' : ` ${f.unit}`;
-                console.log(`${f.quantity}${unit} ${f.food.name}`);
+                terminal.defaultColor(`${f.quantity}${unit} `);
+                terminal.italic(`${f.food.name}`);
+                terminal.nextLine(1);
             });
-            console.log('\n');
+            terminal.nextLine(1);
         }
     });
+    terminal.bell();
 }
 
 // This should be dynamic based on user
