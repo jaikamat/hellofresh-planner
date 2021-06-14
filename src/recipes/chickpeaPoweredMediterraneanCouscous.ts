@@ -58,8 +58,8 @@ const recipe: Recipe = {
         },
         {
             food: ISRAELI_COUSCOUS,
-            quantity: 0.75,
-            unit: Unit.CUP,
+            quantity: 5,
+            unit: Unit.OZ,
         },
         {
             food: VEGETABLE_STOCK_CONCENTRATE,

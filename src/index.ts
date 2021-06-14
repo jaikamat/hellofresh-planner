@@ -23,7 +23,9 @@ function createShoppingList(recipes: Recipe[]): Ingredient[] {
 
         if (ingredientLocation > -1) {
             if (output[ingredientLocation].unit !== i.unit) {
-                throw new Error('unit mismatch detected in ingredient!');
+                throw new Error(
+                    `Unit mismatch detected in ingredient: ${i.food} | ${i.unit}, ${output[ingredientLocation].food} | ${output[ingredientLocation].unit}`
+                );
             }
             output[ingredientLocation].quantity += i.quantity;
         } else {
@@ -70,10 +72,11 @@ function formatOutput(ingredients: Ingredient[]): void {
 // This should be dynamic based on user
 (function init() {
     const list = createShoppingList([
-        recipes.currySpicedChickpeaBowls,
-        recipes.sweetChiliTurkeyGreenBeanBowls,
         recipes.apricotAlmondChickpeaTagine,
-        recipes.apricotAlmondChickpeaTagine,
+        recipes.chickpeaPoweredMediterraneanCouscous,
+        recipes.bruschettaZucchiniBoats,
+        recipes.surfsUpChickenRiceBowl,
+        recipes.hoisinSweetPotatoMushroomBowl,
     ]);
 
     formatOutput(list);
